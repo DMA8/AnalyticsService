@@ -1,0 +1,27 @@
+http_server:
+  port: ':3002'
+  api_version: '/analytics/v1'
+
+app:
+  name:    'analytics'
+  version: '0.0.1'
+
+auth_grpc:
+  host: ''
+  port: ':4000'
+
+postgres:
+  url: 'postgresql://test:test@localhost:5432/test'
+
+tasks_events_grpc:
+  host: ''
+  port: ':9001'
+
+kafka:
+  url: "91.185.95.87:9094"
+  task_topic: "team31-taskTopic"
+  mail_topic: "team31-mailTopic"
+  group_id: "analytics"
+
+logger:
+  log_level: 'debug'
